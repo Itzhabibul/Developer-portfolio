@@ -189,3 +189,38 @@ footer{
     border-radius: 5px;
     border: 0px;
 }
+.hide{
+    display: none;
+}
+/* responsive styles */
+/* mobile devices  */
+@media screen and (max-width: 576px) {
+ 
+    .header{
+        background-image: none;
+    }
+    .banner .pic{
+        width: 100%;
+    }
+    nav,.banner, .skill-container, .resume-container, footer, .about-info-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner{
+        padding: 5px;
+    }
+    nav>ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer, .about{
+        padding: 10px;
+        align-items: center;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    #what-i-do-description{
+        padding: 5px;
+    }
+}
